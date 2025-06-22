@@ -1,0 +1,598 @@
+/*@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #profile {
+    display: block;
+  }
+
+  section {
+    height: fit-content;
+    margin: 0 5%;
+  }
+
+  .profile-pic-container,
+  .about-pic-container,
+  .skills-pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .work-details-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills-details-container,
+  .about-details-container {
+    flex-wrap: wrap;
+  }
+
+  .about-text,
+  .skills-text p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .work-details-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .skills-pic-container,
+  .about-pic-container,
+  .profile-pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+
+  .desktop-nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-container {
+    width: 250px;
+    padding: 0.5rem;
+  }
+
+  .skill-details-text h4 {
+    font-size: 1rem;
+  }
+  .skill-details-text {
+    padding: 0.3rem;
+  }
+
+  .skills-text h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-text {
+    font-size: 1.25rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .desktop-nav-links li a {
+    font-size: 1rem;
+  }
+
+}
+*/ /* Enhanced responsive design with better breakpoints and optimizations */
+
+/* Large tablets and small desktops */
+@media screen and (max-width: 1400px) {
+  section {
+    margin: 0 8rem;
+  }
+
+  .profile-pic-container,
+  .about-pic-container,
+  .skills-pic-container {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+/* Standard tablets */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #profile {
+    display: block;
+  }
+
+  section {
+    height: fit-content;
+    margin: 0 5%;
+  }
+
+  .profile-pic-container,
+  .about-pic-container,
+  .skills-pic-container {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto 2rem;
+  }
+
+  /* Better button sizing for tablets */
+  .btn {
+    height: 2.5rem;
+    width: 9rem;
+    font-size: 1.1rem;
+  }
+
+  /* Improve contact containers for tablets */
+  .contact-container {
+    width: 300px;
+    padding: 0.8rem;
+  }
+}
+
+/* Small tablets and large phones */
+@media screen and (max-width: 950px) {
+  .about-details-container {
+    gap: 2rem;
+  }
+
+  .work-details-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .profile-text {
+    font-size: 1.8rem;
+  }
+
+  .profile-text-container p:first-child {
+    font-size: 1.3rem;
+  }
+
+  .profile-text-container p:last-child {
+    font-size: 1.5rem;
+  }
+
+  /* Better skills layout */
+  .skills-container {
+    gap: 1.5rem;
+  }
+
+  .skill-details {
+    height: 3.5rem;
+  }
+
+  .skill-details-text {
+    padding: 0 1.5rem;
+    gap: 1.5rem;
+  }
+}
+
+/* Standard mobile breakpoint */
+@media screen and (max-width: 850px) {
+  .skills-details-container,
+  .about-details-container {
+    flex-wrap: wrap;
+  }
+
+  .about-text,
+  .skills-text p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  /* Improve gap spacing */
+  #profile {
+    gap: 3rem;
+  }
+
+  #about,
+  #skills {
+    gap: 3rem;
+  }
+
+  /* Better contact layout */
+  .contact-details-container {
+    gap: 2rem;
+  }
+
+  .contact-container {
+    width: 280px;
+  }
+}
+
+/* Large phones */
+@media screen and (max-width: 750px) {
+  .profile-pic-container,
+  .about-pic-container,
+  .skills-pic-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .profile-text {
+    font-size: 1.6rem;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+  }
+
+  .skills-text p {
+    font-size: 1.1rem;
+  }
+
+  /* Better skill bars for smaller screens */
+  .skill-details-text {
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .skill-title,
+  .skill-percentage {
+    font-size: 1.1rem;
+  }
+
+  /* Responsive contact containers */
+  .contact-container {
+    width: 260px;
+    padding: 0.7rem;
+    gap: 1.5rem;
+  }
+
+  .conatct-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Standard mobile phones */
+@media screen and (max-width: 600px) {
+  .work-details-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  #contact,
+  footer {
+    height: 40vh;
+  }
+
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+    gap: 2rem;
+  }
+
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  .skills-pic-container,
+  .about-pic-container,
+  .profile-pic-container {
+    width: auto;
+    height: 46vw;
+    max-height: 220px;
+    min-height: 180px;
+    justify-content: center;
+  }
+
+  .desktop-nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-container {
+    width: 250px;
+    padding: 0.5rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .skill-details-text h4 {
+    font-size: 1rem;
+  }
+
+  .skill-details-text {
+    padding: 0.3rem;
+  }
+
+  .skills-text h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .profile-text {
+    font-size: 1.4rem;
+  }
+
+  .profile-text-container p:first-child {
+    font-size: 1.2rem;
+  }
+
+  .profile-text-container p:last-child {
+    font-size: 1.3rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .desktop-nav-links li a {
+    font-size: 1rem;
+  }
+
+  /* Better button sizing for mobile */
+  .btn {
+    height: 2.5rem;
+    width: 10rem;
+    font-size: 1rem;
+  }
+
+  .profile-btn-container {
+    gap: 1rem;
+  }
+
+  /* Improve section spacing */
+  section {
+    margin: 0 3%;
+    padding-top: 2vh;
+  }
+
+  /* Better title spacing */
+  .title-container {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Small mobile phones */
+@media screen and (max-width: 480px) {
+  .profile-pic-container,
+  .about-pic-container,
+  .skills-pic-container {
+    height: 40vw;
+    max-height: 180px;
+    min-height: 150px;
+  }
+
+  .profile-text {
+    font-size: 1.2rem;
+  }
+
+  .profile-text-container p:first-child {
+    font-size: 1rem;
+  }
+
+  .profile-text-container p:last-child {
+    font-size: 1.1rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .skills-text p {
+    font-size: 1rem;
+  }
+
+  .skills-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .contact-container {
+    width: 220px;
+    padding: 0.5rem;
+  }
+
+  .btn {
+    height: 2.2rem;
+    width: 10rem;
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  /* Stack contact items vertically on very small screens */
+  .contact-container {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .icon {
+    height: 25px;
+    width: 25px;
+  }
+
+  /* Reduce section margins further */
+  section {
+    margin: 0 2%;
+  }
+
+  /* Improve skill bars for very small screens */
+  .skill-details {
+    height: 3rem;
+  }
+
+  .skill-details-text {
+    padding: 0 0.8rem;
+    gap: 0.8rem;
+  }
+
+  .skill-title,
+  .skill-percentage {
+    font-size: 0.9rem;
+  }
+}
+
+/* Very small screens */
+@media screen and (max-width: 360px) {
+  .hamburger-nav-links a {
+    font-size: 1.2rem;
+    padding: 8px;
+  }
+
+  .profile-btn-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .btn {
+    width: 9rem;
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+
+  .contact-container {
+    width: 200px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .profile-text {
+    font-size: 1.1rem;
+  }
+
+  /* Further reduce skill bar complexity on tiny screens */
+  .skill-details-text {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.3rem;
+    padding: 0.5rem;
+  }
+
+  .skill-percentage {
+    margin-left: 0;
+  }
+
+  .skill-details {
+    height: fit-content;
+  }
+}
+
+/* Landscape orientation optimizations */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  #profile {
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  .profile-pic-container,
+  .about-pic-container,
+  .skills-pic-container {
+    height: 30vh;
+    width: 30vh;
+  }
+
+  section {
+    padding-top: 2vh;
+  }
+
+  nav {
+    height: 10vh;
+  }
+}
+
+/* High DPI screen optimizations */
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi) {
+  .profile-pic,
+  .thumbnail {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+
+/* Hover improvements for touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .btn:hover,
+  .contact-container:hover,
+  .thumbnail:hover {
+    transform: none;
+    background-color: initial;
+  }
+
+  /* Add active states instead */
+  .btn:active {
+    transform: scale(0.95);
+  }
+
+  .contact-container:active {
+    transform: scale(0.98);
+  }
+
+  .thumbnail:active {
+    transform: scale(1.02);
+  }
+}
+
+/* Print styles */
+@media print {
+  #hamburger-nav,
+  #desktop-nav,
+  .profile-btn-container,
+  .profile-socials-container {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+
+  section {
+    break-inside: avoid;
+    margin: 0;
+    padding: 1rem 0;
+  }
+}

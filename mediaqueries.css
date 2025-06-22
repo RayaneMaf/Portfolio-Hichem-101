@@ -464,7 +464,7 @@
   }
 
   .thumbnail:active {
-    transform: scale(1.02);
+    transform: scale(1.1);
   }
 }
 
@@ -486,5 +486,11 @@
     break-inside: avoid;
     margin: 0;
     padding: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .thumbnail:hover {
+    transform: scale(2.4);
   }
 }

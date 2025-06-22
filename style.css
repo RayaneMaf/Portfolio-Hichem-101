@@ -391,30 +391,6 @@ section#profile {
   gap: 2rem;
 }
 
-/*.skill-details {
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
-  border-radius: 1rem;
-  height: 3.5rem;
-  justify-content: center;
-}
-
-.skill-details-text {
-  padding: 0 1rem;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-.skill-percentage {
-  margin-left: auto;
-}
-
-.skill-bar {
-  background-color: rgb(30, 110, 255);
-  height: 0.5rem;
-}*/
-
 .skill-details {
   position: relative;
   overflow: hidden;
@@ -496,7 +472,7 @@ section#profile {
 }
 
 .thumbnail:hover {
-  transform: scale(1.05);
+  transform: scale(1.8);
 }
 
 .see-all {
@@ -515,9 +491,16 @@ section#profile {
 
 .contact-details-container {
   display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-containers {
+  display: flex;
   flex-direction: column;
   gap: 3rem;
-  align-items: center;
 }
 
 .contact-container {

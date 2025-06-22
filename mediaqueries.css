@@ -1,114 +1,3 @@
-/*@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
-  #profile {
-    display: block;
-  }
-
-  section {
-    height: fit-content;
-    margin: 0 5%;
-  }
-
-  .profile-pic-container,
-  .about-pic-container,
-  .skills-pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .work-details-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .skills-details-container,
-  .about-details-container {
-    flex-wrap: wrap;
-  }
-
-  .about-text,
-  .skills-text p {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .title {
-    font-size: 2rem;
-    text-decoration: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .work-details-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  #contact,
-  footer {
-    height: 40vh;
-  }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .skills-pic-container,
-  .about-pic-container,
-  .profile-pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-
-  .desktop-nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .contact-container {
-    width: 250px;
-    padding: 0.5rem;
-  }
-
-  .skill-details-text h4 {
-    font-size: 1rem;
-  }
-  .skill-details-text {
-    padding: 0.3rem;
-  }
-
-  .skills-text h3 {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  .profile-text {
-    font-size: 1.25rem;
-  }
-
-  .logo {
-    font-size: 1.5rem;
-  }
-
-  .desktop-nav-links li a {
-    font-size: 1rem;
-  }
-
-}
-*/ /* Enhanced responsive design with better breakpoints and optimizations */
-
 /* Large tablets and small desktops */
 @media screen and (max-width: 1400px) {
   section {
@@ -151,7 +40,7 @@
   /* Better button sizing for tablets */
   .btn {
     height: 2.5rem;
-    width: 9rem;
+    width: 12rem;
     font-size: 1.1rem;
   }
 
@@ -164,6 +53,9 @@
 
 /* Small tablets and large phones */
 @media screen and (max-width: 950px) {
+  .contact-details-container {
+    flex-direction: column;
+  }
   .about-details-container {
     gap: 2rem;
   }

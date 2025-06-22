@@ -26,21 +26,6 @@ A simple, responsive personal portfolio website showcasing Hichem Badid’s work
 - "Contact" section with email and social links
 - Mobile-friendly design via media queries
 
-## Getting Started
-
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd <repo-folder>
-   ```
-
-2. **Open locally**
-   - Open `index.html` in your browser.
-   - (Optional) Serve via Live Server in VSCode or any HTTP server:
-     ```bash
-     npx http-server .  # or similar
-     ```
-
 ## File Structure
 
 ```
